@@ -1,0 +1,1554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- Took this out for IE6ites "http://www.w3.org/TR/REC-html40/loose.dtd" -->
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>
+      PerlMonks - The Monastery Gates
+    </title>
+    
+    <!-- Theme 404270: Perl-Blue Perl Monks Theme    -->
+    <link rel="stylesheet" href="pm_files/common.css" type="text/css">
+    <link rel="stylesheet" href="pm_files/a.css" type="text/css">
+    <!-- No CSS Link in User Settings -->
+    <!-- No CSS Data in User Settings -->
+    <link rel="icon" href="http://perlmonks.org/favicon.ico">
+    
+
+    <meta name="description" content="A community committed to sharing Perl
+                     knowledge and coding tips.  The site
+                     contains questions and answers, useful
+                     snippets, and a library of code.">
+    <meta name="keywords" content="perl, mod_perl, regular expressions,
+                     regexp, xp whoring, CGI, programming,
+                     learning, tutorials, questions, answers,
+                     examples, vroom, tim, node, experience,
+                     votes, code">
+  </head>
+
+  <body id="id-131">
+<!-- monktainer -->
+<!-- monkbar2001 -->
+
+    <table id="monkbar" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tbody><tr class="bannerrow">
+        <td align="left" width="100%">
+        <a href="http://pair.com/">
+ <img src="pm_files/pair-banner-current.gif" alt="Beefy Boxes and Bandwidth Generously Provided by pair Networks" width="468" height="60">
+</a>
+        </td>
+        <td rowspan="2" align="right" valign="bottom">
+          <a href="http://perlmonks.org/?node_id=966"><img src="pm_files/redkudra.gif" alt="kudra" title="kudra"  height="91" width="74"></a>
+
+        </td>
+      </tr>
+      <tr class="monkquip">
+        <td class="monkquip" valign="bottom" width="100%">
+          The stupid question is the question not asked
+        </td>
+      </tr>
+      <tr class="titlebar">
+        <td class="titlebar">
+
+          <form method="get" action="?" enctype="application/x-www-form-urlencoded">
+            &nbsp;
+            <input name="node" id="search_text" size="20" maxlength="300" type="text">
+            <input class="titlebar" value="Search" type="submit">
+          </form>
+        </td>
+        <td class="titlebar" id="mb2001titlebar" align="right">
+          <a class="titlebar" href="http://perlmonks.org/?">
+            PerlMonks
+          </a>
+        </td>
+      </tr>
+    </tbody></table>
+
+<!-- /monkbar2001 -->
+<!-- Begin title bar -->
+<table id="titlebar-top" align="center" width="98%">
+  <tbody>
+    <tr>
+      <td class="titlechooser" valign="middle">
+        <!-- superdoc title chooser(1) -->
+        <h3 class="superdoc">The Monastery Gates</h3>
+        <!-- /superdoc title chooser(1) -->
+      </td>
+      <td class="monktitlebar" align="right" valign="top">
+        <!-- monktitlebar -->
+        <ul class="topnavmenu inline-list">
+<li><a href="http://perlmonks.org/?node_id=109;op=logout">log&nbsp;kimmel&nbsp;out</a></li><li><a href="http://perlmonks.org/?node_id=910459">kimmel</a></li>
+<li><a href="http://perlmonks.org/?">The&nbsp;Monastery&nbsp;Gates</a></li>
+<li><a href="http://perlmonks.org/?node=Super%20Search">Super&nbsp;Search</a></li>
+<br>
+<li><a href="http://perlmonks.org/?node=Seekers%20of%20Perl%20Wisdom">Seekers&nbsp;of&nbsp;Perl&nbsp;Wisdom</a></li>
+<li><a href="http://perlmonks.org/?node=Meditations">Meditations</a></li>
+<li><a href="http://perlmonks.org/?node=Perl%20Monks%20Discussion">PerlMonks&nbsp;Discussion</a></li>
+<br>
+<li><a href="http://perlmonks.org/?node=Obfuscated%20Code">Obfuscation</a></li>
+<li><a href="http://perlmonks.org/?node=Reviews">Reviews</a></li>
+<li><a href="http://perlmonks.org/?node=Cool%20Uses%20for%20Perl">Cool&nbsp;Uses&nbsp;For&nbsp;Perl</a></li>
+<li><a href="http://perlmonks.org/?node=Perl%20News">Perl&nbsp;News</a></li>
+<li><a href="http://perlmonks.org/?node=Categorized%20Questions%20and%20Answers">Q&amp;A</a></li>
+<li><a href="http://perlmonks.org/?node=Tutorials">Tutorials</a></li>
+<br>
+<li><a href="http://perlmonks.org/?node=Perl%20Poetry">Poetry</a></li>
+<li><a href="http://perlmonks.org/?node=Recently%20Active%20Threads">Recent&nbsp;Threads</a></li>
+<li><a href="http://perlmonks.org/?node=Newest%20Nodes">Newest&nbsp;Nodes</a></li>
+<li><a href="http://perlmonks.org/?node=Offering%20Plate">Donate</a></li>
+<li><a href="http://perlmonks.org/?node=Tidings">What's&nbsp;New</a></li>
+</ul>
+
+
+        <!-- /monktitlebar -->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table id="titlebar-bottom" align="center" width="98%">
+  <tbody>
+    <tr>
+      <td class="titlechooser" valign="middle">
+        <!-- superdoc title chooser(2) -->
+         <span class="addlinks">(&nbsp;#<a href="http://perlmonks.org/?node_id=131">131</a>=superdoc:&nbsp;<a href="http://perlmonks.org/?displaytype=print;node_id=131">print</a>&nbsp;<a href="http://perlmonks.org/?displaytype=print;node_id=131;replies=1">w/&nbsp;replies</a>, <a href="http://perlmonks.org/?displaytype=xml;node_id=131">xml</a>&nbsp;)</span>
+        <!-- superdoc title chooser(2) -->
+      </td>
+      <td class="monktitlebar" align="right" valign="middle">
+        <a href="http://perlmonks.org/?node=PerlMonks%20FAQ">Need Help??</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- End title bar -->
+<!-- Begin main (monktainer) -->
+
+<center>
+  <table width="98%">
+    <tbody><tr>
+      <td class="main_content" valign="top" width="80%">
+        <!--contained stuff-->
+        
+<p></p><center><b><a href="http://perlmonks.org/?node=Offering%20Plate">Donations gladly accepted</a></b></center><p></p>
+
+
+<form method="post" action="?" enctype="multipart/form-data">
+<div style="display:none"><input name="node_id" value="131" type="hidden"></div><input name="vc" value="QO8MZBd3/becApTMGzdmAw" type="hidden"><input name="op" value="vote" type="hidden">
+
+<p align="left">Want Mega XP? Prepare to have your hopes dashed, join in on the: <font size="2"> <b><a href="http://perlmonks.org/?node_id=945799">poll ideas quest 2012</a></b>&nbsp;&nbsp;(Don't worry; you've got plenty of time.)</font></p><table cellpadding="0" cellspacing="0" width="100%">
+
+  <tbody><tr class="section_title" width="100%" border="1">
+    <td class="section_title" width="100%">
+New Questions
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table border="0" cellpadding="2" cellspacing="0" width="100%">
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tbody><tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id971498" name="post-head-id971498" href="http://perlmonks.org/?node_id=971498">syntax error near unexpected token `)'</a>
+<br>
+<!-- REPLIES -->
+    3 direct replies — <a href="http://perlmonks.org/?node_id=971498">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=662691">vit</a>
+<br>
+<!-- DATE -->
+    on May 20, 2012 at 12:55
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__971498" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__971498" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__971498" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul>Dear Monks,<br>
+I want to match with optional "'" and optional subsequent word 
+<pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">cat file.txt |  perl -ne '{chomp; ($a, $b) = split/\s+/; $s = "$a $b";<span class="line-breaker">
+<font color="red">+</font></span> next if($s !~ /^\w+\'?\w+?\s+\w+\'?\w+?$/); print "$_\n"}' | wc -l
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971498;part=1">[download]</a></div></font></pre>
+
+I am getting 
+<pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">bash: syntax error near unexpected token `)'
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971498;part=2">[download]</a></div></font></pre>
+
+Is it something related to sygwin or activesatate Perl I use? Or I am missing something?</ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id971497" name="post-head-id971497" href="http://perlmonks.org/?node_id=971497">[Resolved]Email::Mime 1 email + multiple attachments</a>
+<br>
+<!-- REPLIES -->
+    1 direct reply — <a href="http://perlmonks.org/?node_id=971497">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=931957">kazak</a>
+<br>
+<!-- DATE -->
+    on May 20, 2012 at 12:24
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__971497" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__971497" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__971497" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul>Hi, to all. 
+I'm trying to add multiple attachments with Email::Mime to 1 email. 
+Script executed by schedule and checks MySQL DB in order to get 
+recipients list, attachment list, etc. I managed to implement my idea 
+but not like I wanted. (For each recipient script compiles his own 
+e-mail  and attaches 1 file, in result 1 recipient will not  receive 1 
+e-mail with 3 attachments, but 3 e-mails with 1 attachment in each 
+e-mail.) The main problem for me is: If  I'm trying to access "@parts" 
+outside of "foreach loop", @parts are empty, so  I definitely doing 
+something wrong, but I can't find where, thanks in advance.
+
+<p>Here is the piece of code and attachment list format:</p>
+<p>Attachment list may look like this: summary.csv,weekly.csv,john.csv</p>
+
+<pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1"> my @files = split /,/,$Attachment;
+               foreach (@files) {
+                 chomp;
+                 my $f_name = $_;
+                 $f_name =~ s/\/root\/Helpers/reports\///;
+                 print "FILENAME:$f_name\n";
+             my @parts = (
+             Email::MIME-&gt;create(
+              attributes =&gt; {
+              filename     =&gt; "$f_name",
+              content_type =&gt; "application/x-7z-compressed",
+              disposition  =&gt; "attachment",
+              encoding     =&gt; "base64",
+              name         =&gt; "$f_name",
+              },
+              body =&gt; io( $_ )-&gt;all,
+              ),
+              );
+           $email = Email::MIME-&gt;create(
+           header_str =&gt; [ From =&gt; 'reporter@example.com' ],
+           parts      =&gt; [ @parts ],
+           header_str =&gt; [ To =&gt; $To ],
+           header_str =&gt; [ Subject =&gt; $Report_name ],
+            );
+$email-&gt;filname_set($f_name);
+$email-&gt;name_set($f_name);
+my $eml = $email-&gt;as_string;
+}
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971497;part=1">[download]</a></div></font></pre>
+
+</ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id971496" name="post-head-id971496" href="http://perlmonks.org/?node_id=971496">Database abstraction including data types</a>
+<br>
+<!-- REPLIES -->
+    1 direct reply — <a href="http://perlmonks.org/?node_id=971496">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=933574">mbethke</a>
+<br>
+<!-- DATE -->
+    on May 20, 2012 at 12:22
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__971496" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__971496" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__971496" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul><p>There's heaps of database abstraction modules in Perl but it 
+seems that while abstraction always means "You don't have to deal with 
+messy C interfaces", and sometimes "You can write SQL in Perl", it 
+hardly ever means "we'll take care of data type idiosyncrasies for you".
+ I need something like that.</p>
+<p>My problem (briefly mentioned in <a href="http://perlmonks.org/?node_id=971334">my announcement of Ashafix</a>)
+ is this: I've used a couple of DBMS layers but all programs have been 
+tied to one particular DBMS. Now I want to write one that runs unchanged
+ on at least PostgreSQL and MySQL and my first problem is the handling 
+of booleans. Pg uses an own type that returns 't' or 'f' while MySQL by 
+convention uses TINYINT that is set to zero or non-zero. Currently I'm 
+using DBIx::Simple and I'd prefer to keep it fairly slim. My ideas so 
+far:
+</p><ul>
+<li>Define an ENUM in MySQL to emulate the Pg behavior. Doesn't work 
+because other software is using the database too and would get very 
+confused.</li>
+<li>Use DBIx::Class, write my own InflateColumn::Bool and a primitive 
+Bool class that uses a tied hash or something to give the usual 
+zero-or-nonzero-scalar behavior when used in boolean context.<br>Disadvantage: that's about as fat as it gets.</li>
+<li>Subclass DBIx::Simple, feed it a simple column=&gt;type mapping for each table I'll use and make all retrieval methods use a <tt>hash()</tt>/<tt>hashes()</tt> method internally so I can do the mapping myself.<br>Disadvantage: smells inefficient (although it's probably still much faster than DBIx::Class), may be reinventing the wheel.</li>
+</ul><p></p>
+<p>Have I by any chance overlooked something on CPAN that would let me do this in a simpler way?</p></ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id971450" name="post-head-id971450" href="http://perlmonks.org/?node_id=971450">Creating new database handles with mod_perl</a>
+<br>
+<!-- REPLIES -->
+    1 direct reply — <a href="http://perlmonks.org/?node_id=971450">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=971448">lschult2</a>
+<br>
+<!-- DATE -->
+    on May 19, 2012 at 20:01
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__971450" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__971450" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__971450" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul><p>Hello,</p>
+
+<p>I've run into an issue when stress testing mod_perl that the database
+ connections are going away.  I suspect that processes are sharing 
+database connections, causing the issue.</p>
+
+<p>But I've followed all instructions for Apache::DBI, and can't figure this out.</p>
+
+I'm making the connections in the child process and not in startup.pl.  
+But when I examine the $dbh returned by each child from the 
+DBI-&gt;connnect, the address is the same for every httpd process.
+
+<p>Firstly, if this is working properly and reconnecting for each 
+process, should the address returned by DBI-&gt;connect be different for
+ each child process?  I've assumed so, but as far as I can tell the core
+ C code in DBI (dbih_setup_handle) is managing this and is returning the
+ same address.  So maybe I'm not understanding what it means to 
+reconnect in the child.  </p>
+
+<p>Am I reconnecting properly if the $dbh handles are the same?</p></ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id971356" name="post-head-id971356" href="http://perlmonks.org/?node_id=971356">ithreads or fork() what you recommend?</a>
+<br>
+<!-- REPLIES -->
+    3 direct replies — <a href="http://perlmonks.org/?node_id=971356">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=971354">pawan68923</a>
+<br>
+<!-- DATE -->
+    on May 18, 2012 at 15:52
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__971356" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__971356" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__971356" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul>Hi,
+
+<p>I have to modify and use parallel processing for a large and complex 
+system which is implemented in Perl. Each child process or threads are 
+supposed to use memory around 1 GB and will run for around 1-3 hours on 
+Solaris Server. Total parent's execution time would be around 12-14 
+hours.</p>
+
+<p>My question is - what is your recommendation - use of ithreads or 
+multi processing using fork(). 100s of processes or threads need to be 
+created with a concurrency limit of around 15 at a time to loop over 
+list of 130-150 jobs. Considering amount of memory it is going to use 
+and execution duration, which approach you would suggest? Relibility of 
+the overall processing is important since it will run in production 
+environment.</p>
+
+Thanks!
+
+<p>Best regards,
+Pawan</p> </ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id971264" name="post-head-id971264" href="http://perlmonks.org/?node_id=971264">initialize all values in a hash</a>
+<br>
+<!-- REPLIES -->
+    4 direct replies — <a href="http://perlmonks.org/?node_id=971264">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=827765">AWallBuilder</a>
+<br>
+<!-- DATE -->
+    on May 18, 2012 at 06:11
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__971264" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__971264" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__971264" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul><p> I want to perform a seemingly simple task, but am confused.  I would like to initialize all values in my hash to equal 60. </p>
+<pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">my $maxBits=60; # hash reference - gave error message below
+my %maxBits=60; # wrong
+%maxBits=map {$_=&gt;60} ; #?
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971264;part=1">[download]</a></div></font></pre>
+
+
+<pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">Can't use string ("60") as a HASH ref while "strict refs" in use at fl<span class="line-breaker">
+<font color="red">+</font></span>agginscript_Flag1.pl line 58, &lt;IN&gt; line 1. 
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971264;part=2">[download]</a></div></font></pre>
+
+
+
+
+<p> here is a larger chunk of the code so you can see the context</p>
+
+<pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">############### read in blast table and parse #######
+my $in_blast_tab=$ARGV[0];
+open(IN,$in_blast_tab) or die "cannot open $in_blast_tab\n";
+
+my $HoFlg1={}; my $HoFlg2={};
+my $maxBits=60;
+#%maxBits=map {$_=&gt;60} ; # or intialize all values to be 60 using map
+print "maxBits after intialization\n";
+print Dumper($maxBits);
+while (my $line=&lt;IN&gt;) {
+        next if ($line =~ /^#/);
+        next unless ($line =~ /\S/);
+        chomp $line;
+        my ($Query_id,$strand,$Subj_id,$Perc_iden,$align_len,$num_mm,$<span class="line-breaker">
+<font color="red">+</font></span>gap,$q_start,$q_end,$s_start,$s_end,$e_value,$bit_score)=split("\t",$<span class="line-breaker">
+<font color="red">+</font></span>line); # extra field of strand
+        next if ($bit_score &lt;60);
+        if ($bit_score &gt; $maxBits-&gt;{$Query_id}){
+                $maxBits-&gt;{$Query_id}=$bit_score;
+        }
+        my ($Flag1, $Flag2 ) = &amp;Flag( $Subj_id, \%proph_prots, \%euk_p<span class="line-breaker">
+<font color="red">+</font></span>rots, \%vir_prots );
+        $HoFlg1-&gt;{$Query_id}-&gt;{$Flag1}-&gt;{$bit_score}++;
+        $HoFlg2-&gt;{$Query_id}-&gt;{$Flag2}-&gt;{$bit_score}++;
+        print join("\t",$Query_id,$Subj_id,"bit",$bit_score,"F1",$Flag<span class="line-breaker">
+<font color="red">+</font></span>1,"F2",$Flag2,"maxBits{Query}",$maxBits-&gt;{$Query_id})."\n";
+
+}
+#print "Hash HoFlg1\n";
+#print Dumper($HoFlg1)."\n";
+#print "Hash maxBits\n";
+#print Dumper(%maxBits)."\n";
+
+sub Flag {
+    my ( $Subj_id, $proph_prots, $euk_prots, $vir_prots ) = @_;
+    return "Proph", "Phage" if exists $$proph_prots{$Subj_id};
+    return "Euk",   "Euk"   if exists $$euk_prots{$Subj_id};
+    return "Vir",   "Phage" if exists $$vir_prots{$Subj_id};
+    return "Bact",  "Bact";
+} ## end sub Flag
+
+my $bits_perc=$ARGV[1]; # consider hits within this percent of top hit
+my $outfile="$in_blast_tab.$bits_perc.FlagTab";
+open(OUT,"&gt;",$outfile);
+print OUT "# this file was generate by $0 on".localtime(time)."\n";
+print OUT "# these are the counts of hits for each Flag that are withi<span class="line-breaker">
+<font color="red">+</font></span>n $bits_perc of the top bit_score\n";
+print OUT "#".join("\t",qw(Query count_Proph count_Euk count_Vir count<span class="line-breaker">
+<font color="red">+</font></span>_Bact))."\n";
+my @flag_list2=("Phage","Euk","Bact");
+my @flag_list1=("Proph","Euk","Vir","Bact");
+foreach my $q (keys %{$HoFlg1}){
+print OUT "$q\t";
+        for my $flag (@flag_list1){
+        my $count={};
+        if (! exists $HoFlg1-&gt;{$q}-&gt;{$flag}){
+                $count-&gt;{$flag}=0;
+        }
+        else {
+                for my $b (keys %{$HoFlg1-&gt;{$q}-&gt;{$flag}}){
+                if ($b &gt; $bits_perc*$maxBits-&gt;{$q}){
+                        $count-&gt;{$flag} += $HoFlg1-&gt;{$q}-&gt;{$flag}-&gt;{$b<span class="line-breaker">
+<font color="red">+</font></span>};
+                }
+                }
+
+        }
+        if (! defined $count-&gt;{$flag}){
+                $count-&gt;{$flag}=0;
+        }
+        print OUT "$count-&gt;{$flag}\t";
+        }
+print OUT "\n";
+}
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971264;part=3">[download]</a></div></font></pre>
+</ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id971228" name="post-head-id971228" href="http://perlmonks.org/?node_id=971228">Read data from csv file to a data structure format</a>
+<br>
+<!-- REPLIES -->
+    2 direct replies — <a href="http://perlmonks.org/?node_id=971228">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=961">Anonymous Monk</a>
+<br>
+<!-- DATE -->
+    on May 18, 2012 at 02:59
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__971228" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__971228" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__971228" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul>Hi Perlmonks,<br>
+I would like to create a data structure from a csv file. <p>
+
+The sample csv file as follows<br>
+</p><pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">Product Name,Product Code,Company1,Company2,Company3
+Test One,C001,Y,N,N
+Test Two,C002,N,N,Y
+Test Three,C003,Y,Y,N
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971228;part=1">[download]</a></div></font></pre>
+
+<br>
+and I am looking for an output in the below format
+<br>
+<pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">{ 
+Company1 =&gt; {C001 =&gt; Y, C002 =&gt; N, C003 =&gt; Y}, 
+Company2 =&gt; {C001 =&gt; N, C002 =&gt; N, C003 =&gt; Y}, 
+Company3 =&gt; {C001 =&gt; Y, C002 =&gt; Y, C003 =&gt; N}
+}
+
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971228;part=2">[download]</a></div></font></pre>
+
+<br>
+I tried using Text::CSV_XS module, but not able form a structure as mentioned above
+<br>
+<pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">use Text::CSV_XS;
+my $csv = Text::CSV_XS-&gt;new();
+open my $FH, "&lt;", "test.csv";
+while (&lt;$FH&gt;) {
+$csv-&gt;parse($_);
+my @fields = $csv-&gt;fields;
+
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971228;part=3">[download]</a></div></font></pre>
+
+Is there any CPAN module available to get this structure<br>
+Can you please help on this.<br>
+
+Thanks<br><p></p></ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id971127" name="post-head-id971127" href="http://perlmonks.org/?node_id=971127">Links between Mason components?</a>
+<br>
+<!-- REPLIES -->
+    2 direct replies — <a href="http://perlmonks.org/?node_id=971127">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=22609">tye</a>
+<br>
+<!-- DATE -->
+    on May 17, 2012 at 13:15
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__971127" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__971127" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__971127" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul><p>
+Have I just not found it?  It seems a pretty basic, fundamental, and
+important feature.  And I have not yet found any built-in support in
+<a href="http://search.cpan.org/perldoc?HTML%3A%3AMason">HTML::Mason</a> for constructing a link (as in <tt class="inlinecode"><font size="-1">&lt;a href=...</font></tt>)
+from one Mason component to another where that link includes arguments.
+</p><p>
+That is, other than a quite awkward construction like:
+</p><pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">    &lt;a href="/path/to/component?who=&lt;% $who |u %&gt;;why=&lt;% $why |u %&gt;"&gt;
+    Title goes here&lt;/a&gt;
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971127;part=2">[download]</a></div></font></pre>
+<p>
+Having to remember to include "|u" for each parameter makes that nearly
+unacceptable in my book (after seeing way too many bugs from lack of URL
+escaping that pass unnoticed for a long time and then turn into a crisis,
+even a security problem).  It also gets quite tedious (and error-prone
+and hard to read) when producing a table full of similar links.
+</p><p>
+But to see how awkward that really can be, imagine what I find to be a common
+case: Having a hash of arguments that you want to include in the link.  Am I
+really supposed to roll my own URL constructor for such an obvious case?
+</p><pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">    &lt;&amp; .link, 'Edit Settings', '/widget/settings', %Context &amp;&gt;
+...
+&lt;%def .link&gt;
+%   my( $title, $page, %args ) = @_;
+    &lt;a href="&lt;% $page %&gt;?
+%       for my $key ( sort keys %args ) {
+            &lt;% $key |u %&gt;=&lt;% $args{$key} |u %&gt;;
+%       }
+    "&gt;&lt;% $title |h %&gt;&lt;/a&gt;
+&lt;/%def&gt;
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971127;part=3">[download]</a></div></font></pre>
+<p>
+Although that first line is a reasonable interface, the implementation, of
+course, doesn't actually work, producing:
+</p><pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">
+        &lt;a href="/widget/settings?
+            acct=some_acct%23id;
+            widget=widget%2Bid;
+    "&gt;Edit Settings&lt;/a&gt;
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971127;part=4">[download]</a></div></font></pre>
+<p>
+Is there a better (and actually correct) way to write such <em>in Mason</em>?
+</p><p>
+Too bad defining a "removing newlines and adjacent whitespace" Mason filter
+(call it "|w") doesn't allow me to address this problem as simply as:
+</p><pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">    &lt;&amp; .link, 'Edit Settings', '/widget/settings', %Context |w &amp;&gt;
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971127;part=5">[download]</a></div></font></pre>
+<p>
+(You can use "|w" inside of <tt class="inlinecode"><font size="-1">&lt;% ... %&gt;</font></tt> but not inside of
+<tt class="inlinecode"><font size="-1">&lt;&amp; ... &amp;&gt;</font></tt>.)
+</p><p>
+So, (at least for now) I resign myself to looking outside of Mason for a
+solution.
+</p><div class="readmore-link"><a href="http://perlmonks.org/?node_id=971127">Read more...</a><span class="readmore-size"> (2 kB)</span></div><p>
+So, I roll these pieces together and get:
+</p><div class="readmore-link"><a href="http://perlmonks.org/?node_id=971127">Read more...</a><span class="readmore-size"> (2 kB)</span></div><p>
+And try to use <em>that</em> in my Mason:
+</p><div class="readmore-link"><a href="http://perlmonks.org/?node_id=971127">Read more...</a><span class="readmore-size"> (803 Bytes)</span></div><p>
+Note the gyrations to prevent .link from including newlines.
+</p><p>
+Okay, that is quite a bit uglier than I had hoped for.  But it actually works.
+</p><p>
+But it quickly demonstrated how it wasn't very flexible when I tried to use
+it in a page that uses JavaScript to generate a list of links client-side
+(also changing it to not take a hash of parameters but instead just a
+comma-separated list of key names used to look up the parameter names and
+values that are ever used from this page):
+</p><pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">    &lt;&amp; .link, "Edit $widget_name Settings", 'settings', 'acct,widg' &amp;&gt;
+...
+    &lt;script type="text/javascript"&gt;
+...
+        + '&lt;&amp; .link, "Edit {{feature_name}}", 'edit', 'acct,widg,feat'<span class="line-breaker">
+<font color="red">+</font></span> &amp;&gt;'
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971127;part=12">[download]</a></div></font></pre>
+<p>
+Where the new .link replaces the <tt class="inlinecode"><font size="-1">',feat'</font></tt> with
+<tt class="inlinecode"><font size="-1">feature_id =&gt; '{{feature_id}}'</font></tt> and the JavaScript replaces
+<tt class="inlinecode"><font size="-1">'{{feature_name}}'</font></tt> and <tt class="inlinecode"><font size="-1">'{{feature_id}}'</font></tt> with values
+that vary between rows (one row generated per feature).
+</p><p>
+There is a risk that the second call to .link above would include something
+(a ', a \, or a newline) that wouldn't be legal inside of a JavaScript string.
+That sounds like a job for a Mason filter.  I could define "|l" to strip
+newlines (a common desire when using Mason, it seems) and "|sq" to escape
+those problem characters.
+</p><p>
+Oh, except, as we already mentioned, you can't use something like "|sq"
+with <tt class="inlinecode"><font size="-1">&lt;&amp; ... &amp;&gt;</font></tt>.
+</p><p>
+I could define .sq that escapes the string passed to it.  Ooh, I just found
+this syntax:
+</p><pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">        + '&lt;&amp;| .sq &amp;&gt;&lt;&amp; .link, ... &amp;&gt;&lt;/&amp;&gt;'
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971127;part=18">[download]</a></div></font></pre>
+<p>
+That actually addresses (if in a manner still uglier than I had hoped)
+<em>some</em> of the questions I had when I started writing this.
+</p><p>
+What other features am I missing?  How can I do this better?
+</p>
+<div class="pmsig"><div class="pmsig-22609"><p align="right">
+- <a href="http://perlmonks.org/?node=tye">tye</a><tt> &nbsp; &nbsp; &nbsp; &nbsp;</tt>
+</p></div></div>
+</ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id971099" name="post-head-id971099" href="http://perlmonks.org/?node_id=971099">CPAN - error with installation</a>
+<br>
+<!-- REPLIES -->
+    3 direct replies — <a href="http://perlmonks.org/?node_id=971099">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=924433">Jeri</a>
+<br>
+<!-- DATE -->
+    on May 17, 2012 at 12:03
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__971099" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__971099" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__971099" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul><p> Hi, I'm trying to set up cpan on Ubuntu 12.04 LTS. In the terminal I wrote<br><br>
+sudo perl -MCPAN -e shell<br>
+make install<br>
+install Bundle::CPAN<br><br>
+
+I've done an update and upgrade and have also installed perl.
+
+When I try to download XML::Parser in cpan it complains
+</p><pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">make: *** [subdirs] Error 2
+  TODDR/XML-Parser-2.41.tar.gz
+  /usr/bin/make -- NOT OK
+Running make test
+  Can't test without successful make
+Running make install
+  Make had returned bad status, install seems impossible
+Failed during this command:
+ TODDR/XML-Parser-2.41.tar.gz                 : make NO
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971099;part=1">[download]</a></div></font></pre>
+
+<p></p><p>This happens with any module I try to download. I noticed it 
+was discussed in this 2010 thread 
+http://www.perlmonks.org/?node_id=866275 with no luck. Any help solving 
+the cause of this error would be appreciated.</p>
+
+<p>Thanks in advance!</p></ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id971091" name="post-head-id971091" href="http://perlmonks.org/?node_id=971091">Keeping tags in regex</a>
+<br>
+<!-- REPLIES -->
+    3 direct replies — <a href="http://perlmonks.org/?node_id=971091">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=961">Anonymous Monk</a>
+<br>
+<!-- DATE -->
+    on May 17, 2012 at 11:41
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__971091" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__971091" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__971091" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul><p>Hello monks,</p>
+
+<p>I am doing some substitutions of strings with a regex. For example, I have code like this:</p>
+
+<pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">%dictionary = (foo =&gt; 'bar',
+               baz =&gt; 'w00t');
+
+$str =~ s[$_][$dictionary{$_}] for keys %dictionary;
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971091;part=1">[download]</a></div></font></pre>
+
+
+But now the problem is that some of the words have embedded XML tags. I 
+would like to still perform the substition but keep the XML tag. There 
+is at most one XML tag in a word; for example:
+
+<tt class="inlinecode"><font size="-1">&lt;tag&gt;f&lt;/tag&gt;oo </font></tt> should become <tt class="inlinecode"><font size="-1">&nbsp;&lt;tag&gt;b&lt;/tag&gt;ar </font></tt> <p>and</p> <tt class="inlinecode"><font size="-1">&nbsp;&lt;b&gt;fo&lt;/b&gt;o </font></tt>
+should become <tt class="inlinecode"><font size="-1">&lt;b&gt;ba&lt;/b&gt;r</font></tt>
+
+<p>Is there a simple way of doing this without writing out all of the possible combinations? Thanks!</p></ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id970864" name="post-head-id970864" href="http://perlmonks.org/?node_id=970864">splitting data</a>
+<br>
+<!-- REPLIES -->
+    1 direct reply — <a href="http://perlmonks.org/?node_id=970864">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=970032">BluGeni</a>
+<br>
+<!-- DATE -->
+    on May 16, 2012 at 12:01
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__970864" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__970864" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__970864" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul>I am trying to get a grasp on splitting strings and arrays with perl
+ but am having a little problem. my first page puts data into a database
+ so it can be called upon later. its going in like this:
+<pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">$writetot=$busitotal."/".$perstotal;
+        $STH1-&gt;execute($writetot,$name)
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=970864;part=1">[download]</a></div></font></pre>
+
+ and is being called by data<a href="http://perlmonks.org/?node=1">1</a> , data<a href="http://perlmonks.org/?node=2">2</a>
+ ect..
+my goal here is to split $writetot so i have 2 different outcomes and 
+don't have it displaying $busitotal/$perstotal.
+I need to split it because of the data already in the data base will not
+ change and i need to separate the 2 so i can put $busitotal and 
+$perstotal in 2 dif catagories.
+
+any help would be greatly appreciated!
+Thank you</ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id970836" name="post-head-id970836" href="http://perlmonks.org/?node_id=970836">TLS using Perl &lt; 5.12?</a>
+<br>
+<!-- REPLIES -->
+    1 direct reply — <a href="http://perlmonks.org/?node_id=970836">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=131279">talexb</a>
+<br>
+<!-- DATE -->
+    on May 16, 2012 at 09:53
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__970836" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__970836" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__970836" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul><p>I'd like to know if it's possible to get older Perls (earlier than 5.12.x) to talk TLS. I'm working on using <a href="http://search.cpan.org/search?mode=module&amp;query=SOAP%3A%3ALite">SOAP::Lite</a>
+ to talk to an API; reading the documentation on this module, it isn't 
+immediately apparent whether I can ask earlier Perls to make a TLS 
+connection rather than the default SSLv3 connection.</p>
+
+<div class="pmsig"><div class="pmsig-131279">
+<p>Alex / <a href="http://perlmonks.org/?node=talexb">talexb</a> / Toronto</p>
+<p><small>"<a href="http://www.groklaw.net/">Groklaw</a> is the open-source mentality applied to legal research" ~ Linus Torvalds</small></p>
+
+</div></div></ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" width="100%">
+
+  <tbody><tr class="section_title" width="100%" border="1">
+    <td class="section_title" width="100%">
+New Cool Uses for Perl
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table border="0" cellpadding="2" cellspacing="0" width="100%">
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tbody><tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id971334" name="post-head-id971334" href="http://perlmonks.org/?node_id=971334">Ashafix: Postfixadmin port in Perl/Mojolicious</a>
+<br>
+<!-- REPLIES -->
+    No replies — <a href="http://perlmonks.org/?node_id=971334">Read more</a> | <a href="http://perlmonks.org/?parent=971334;node_id=3333">Post response</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=933574">mbethke</a>
+<br>
+<!-- DATE -->
+    on May 18, 2012 at 11:55
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__971334" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__971334" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__971334" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul><p>I started a new project a while ago and recently it got its own 
+site, time to let them Monks know about it and get it properly bashed:</p>
+<p><a href="http://ashafix.net/">Ashafix</a>—a Postfixadmin port using Mojolicious</p>
+<p>I was tired of trying to hack Postfixadmin to implement stuff like 
+per-user transports and ending up wanting to gouge my eyes out at the 
+look of the PHP, so I decided to take one last look and convert it to 
+something more digestible/extensible, adding a bit of security like the 
+CSRF protection Postfixadmin never got due to its nonexistent (in 
+release versions that is, the alpha is a bit further) templating system 
+and some protection against SQL injection through consistent use of 
+prepared statements.</p>
+<p>The result is still very alpha but has basic things working. As I 
+suck at HTML design, it looks pretty much exactly like Postfixadmin but 
+uses the Template Toolkit under the hood. It supports only MySQL so far 
+as sprinkling the business logic with database case distinctions as in 
+PFA was something I didn't even want to start; if someone has a good 
+idea on how to abstract away datatype differences such as Postgres' 
+boolean that can be 't' or 'f' vs. MySQL's TINYINT with 0 or !0 short of
+ using <a href="http://search.cpan.org/perldoc?DBIx%3A%3AClass">DBIx::Class</a> with column inflators, go ahead!</p>
+<p>Any other ideas, criticism and patches (<a href="https://github.com/mbethke/Ashafix">code is on GitHub</a>) are welcome too of course!</p></ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" width="100%">
+
+  <tbody><tr class="section_title" width="100%" border="1">
+    <td class="section_title" width="100%">
+New Obfuscated Code
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table border="0" cellpadding="2" cellspacing="0" width="100%">
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tbody><tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id971298" name="post-head-id971298" href="http://perlmonks.org/?node_id=971298">Pixel art</a>
+<br>
+<!-- REPLIES -->
+    1 direct reply — <a href="http://perlmonks.org/?node_id=971298">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=908014">Grimy</a>
+<br>
+<!-- DATE -->
+    on May 18, 2012 at 09:21
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__971298" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__971298" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__971298" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul><pre class="code"><div class="codeblock"><tt class="codetext"><font size="-1">          eval'op
+   e    PnY+0;opPen
+  *XP  PYH,"&gt;$0.bmp"
+ ;XprPiYnt(KHY+pack
+ "XsxPY8Kl2s4a*(YH24
+)X*PXPYL",19K778,7Y4,
+1X2,PXPL24,32,K1,4,uYn
+pXaPXcPLk("u",uKc"p_/
+sX[PX^-Pj=L0d7l3K+i?,v
+_Xrko3[aruPe=LanzgK%7=u
+ )X&lt;=y;/RXR  RL_"),sPort
+ {X1}grepRN{  RLs/P.\n
+  /X\t/;Rs  N  RP/\
+   HX/\t/R; N  RX0u
+  ntXil!sR/(N  RX.)
+  [JPX!-I RZO  X-~]
+  /JP$X1$R1QO  X/}&lt;
+  0J&gt;PX)&amp;&amp;NQ   XqqP:
+  |J&amp;&amp;PX::;   X'=~s/
+  |[JfhPX\uj-\uyPX:|
+  qw`&amp;JAPX]//gr#xP/
+  #MP[\J]PEFXGHIP/
+   #MP{}JP  P__/
+   #MZPAC|
+    #MPDB/
+    #MZP|
+     #MP|
+     #Mw|
+     #Mw|
+     #M/
+     #/
+     #
+</font></tt></div><font size="-1"><div class="embed-code-dl"><a href="http://perlmonks.org/?abspart=1;displaytype=displaycode;node_id=971298;part=1">[download]</a></div></font></pre>
+
+Generates <a href="http://s16.postimage.org/m34oiysgh/map_txt.png">this</a> pixel art of Rainbow Dash (it will be named "$0.bmp"). Requires Perl v5.14 (see below for a more compatible version).
+Can't be run from the command line, must be stored in a file (without trailing newlines).
+Strict and warning compliant.
+Only tested under Strawberry Perl.</ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" width="100%">
+
+  <tbody><tr class="section_title" width="100%" border="1">
+    <td class="section_title" width="100%">
+New Monk Discussion
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table border="0" cellpadding="2" cellspacing="0" width="100%">
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tbody><tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id970911" name="post-head-id970911" href="http://perlmonks.org/?node_id=970911">PerlMonks site design</a>
+<br>
+<!-- REPLIES -->
+    10 direct replies — <a href="http://perlmonks.org/?node_id=970911">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=910459">kimmel</a>
+<br>
+<!-- DATE -->
+    on May 16, 2012 at 16:07
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="reputation"><center>Reputation: 17</center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul><p>
+So I made a comment on reddit the other day about the PerlMonks site 
+design: 
+http://www.reddit.com/r/perl/comments/tlied/becoming_a_friar_on_perlmonks/
+</p>
+TL;DR: No one's done the work on a new PerlMonks site design.<br>
+<p>
+Challenge issued, challenge accepted :) I downloaded a copy of the front
+ page and got to work. I have 3 primary goals with this redesign 
+attempt.
+</p>
+<pre>1. Tableless layout
+2. Responsive on cellphones and other small screen devices.
+3. Less visual clutter
+</pre>
+<p>
+I am not changing the color scheme or the layout so it looks the same as it does now.</p>
+<p>
+Can someone post the templates that generate the pages and sections so I can verify that my changes will fit?
+</p>
+I am waiting on the rest of my browser shots of the site and then I will
+ make another post with a link to a github account containing the new 
+design as well as screenshots of the current site versus the new one on 
+desktop browsers and on cellphones.
+
+Are there any 'gotchas' I should know about for working on this project?
+
+Bring on the commentary!</ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+<!-- Begin Post -->
+<!-- embed node with vote container -->
+<tr class="post-head post_head">
+  <td style="padding-left: 0.2em;" valign="top">
+<!-- TITLE -->
+    <a id="post-head-id970476" name="post-head-id970476" href="http://perlmonks.org/?node_id=970476">What is this "ChatterBox" of which you Speak?</a>
+<br>
+<!-- REPLIES -->
+    3 direct replies — <a href="http://perlmonks.org/?node_id=970476">Read more / Contribute</a>
+  </td>
+  <td style="padding-right: 0.2em;" align="right" valign="top">
+<!-- AUTHOR -->
+    by <a href="http://perlmonks.org/?node_id=970457">Clovis_Sangrail</a>
+<br>
+<!-- DATE -->
+    on May 14, 2012 at 13:45
+  </td>
+</tr>
+<tr class="post-voterep">
+  <td colspan="2" class="voterep">
+  <div class="vote"><center><label><input name="vote__970476" value="1" type="radio">++</label> &nbsp; &nbsp; <label><input name="vote__970476" value="-1" type="radio">--</label> &nbsp; &nbsp; <label><input name="vote__970476" value="0" checked="checked" type="radio">+=0</label></center></div>
+  </td>
+</tr>
+<tr class="post-body post_body">
+  <td colspan="2">
+<ul><p>In the "Seekers of Pearl Wisdom" section you write:</p>
+
+<p>"If you have a question on...However, you might consider asking in 
+the chatterbox first (if you're a registered user). The response time 
+tends to be quicker..."</p>
+
+<p>But I can find no section labeled "ChatterBox". I suspect that you 
+mean "The Monastery Gates" but that occured to me after I posted my 
+question in the "Seekers of Perl Wisdom" section.</p>
+</ul>
+
+  </td>
+</tr>
+
+<!--  End Post  -->
+
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+<div class="voteit"><center><input name="sexisgreat" value="vote!" type="submit"></center></div><div><input name=".cgifields" value="vote__971091" type="hidden"><input name=".cgifields" value="vote__971498" type="hidden"><input name=".cgifields" value="vote__970476" type="hidden"><input name=".cgifields" value="vote__971264" type="hidden"><input name=".cgifields" value="vote__971334" type="hidden"><input name=".cgifields" value="vote__971497" type="hidden"><input name=".cgifields" value="vote__970836" type="hidden"><input name=".cgifields" value="vote__971099" type="hidden"><input name=".cgifields" value="vote__971127" type="hidden"><input name=".cgifields" value="vote__971228" type="hidden"><input name=".cgifields" value="vote__971496" type="hidden"><input name=".cgifields" value="vote__971450" type="hidden"><input name=".cgifields" value="vote__971356" type="hidden"><input name=".cgifields" value="vote__970864" type="hidden"><input name=".cgifields" value="vote__971298" type="hidden"></div>
+</form>
+
+
+
+        <!--/contained stuff-->
+      </td>
+      <!--nodelet handling code (monktainer)-->
+      <td class="nodelets" align="right" valign="top" width="20%">
+        <!-- Begin nodelets -->
+<table class="nodelet_container" id="nodelet_container">
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="XP_Nodelet">
+      <tr><th class="nodelet_head">
+          <span class="title">XP Nodelet</span><a href="http://perlmonks.org/?node=About%20the%20XP%20Nodelet" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+You have <b>2</b> <a href="http://perlmonks.org/?node_id=5938" title="Voting/Experience System">votes</a> left today.
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Settings_Nodelet">
+      <tr><th class="nodelet_head">
+          <span class="title">Settings Nodelet</span><a href="http://perlmonks.org/?node=About%20the%20Settings%20Nodelet" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<ul class="inline-list">
+<li><a href="http://perlmonks.org/?displaytype=edit;node_id=910459">My info</a></li>
+<li><a href="http://perlmonks.org/?node_id=1072">User</a></li>
+<li><a href="http://perlmonks.org/?node_id=450961">Display</a></li>
+<li><a href="http://perlmonks.org/?node_id=25185">Nodelet</a></li>
+<li><a href="http://perlmonks.org/?node_id=192270">Timezone</a></li>
+<li><a href="http://perlmonks.org/?node_id=14444">Signature</a></li>
+<li><a href="http://perlmonks.org/?node_id=492848">Newest Nodes</a></li>
+<li><a href="http://perlmonks.org/?node_id=492690">RAT Style</a></li>
+<li><a href="http://perlmonks.org/?node_id=492700">Free Nodelet</a></li>
+<li><a href="http://perlmonks.org/?node_id=366609">Personal Nodelet</a></li>
+<li><a href="http://perlmonks.org/?node_id=512013">Message</a></li>
+<li><a href="http://perlmonks.org/?node_id=17003">Pmdev</a></li>
+<li><a href="http://perlmonks.org/?node_id=16082">ignored users</a></li>
+</ul>
+
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Chatterbox">
+      <tr><th class="nodelet_head">
+          <span class="title">Chatterbox</span><a href="http://perlmonks.org/?node=About%20the%20Chatterbox" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<form method="post" action="?" enctype="multipart/form-data">
+<div style="display:none"><input name="node_id" value="131" type="hidden"></div><label><input name="deletemsg_542437376" value="yup" type="checkbox"> </label>
+<span class="msg">
+ <span class="msgfrom_113">
+  <i class="msgfrom" title="May 16, 2012 at 21:35&nbsp;UTC"><a href="http://perlmonks.org/?node_id=113">root</a> says</i>
+  You've got a reply to <a href="http://perlmonks.org/?node_id=970911">PerlMonks site design</a> from <a href="http://perlmonks.org/?node_id=170442">jdporter</a> at <a href="http://perlmonks.org/?node_id=970928">Re: PerlMonks site design</a><!-- -->
+ </span>
+</span><br>
+<label><input name="deletemsg_542437378" value="yup" type="checkbox"> </label>
+<span class="msg">
+ <span class="msgfrom_113">
+  <i class="msgfrom" title="May 16, 2012 at 21:50&nbsp;UTC"><a href="http://perlmonks.org/?node_id=113">root</a> says</i>
+  You've got a reply to <a href="http://perlmonks.org/?node_id=970911">PerlMonks site design</a> from <a href="http://perlmonks.org/?node_id=961">Anonymous Monk</a> at <a href="http://perlmonks.org/?node_id=970932">Re: PerlMonks site design</a><!-- -->
+ </span>
+</span><br>
+<label><input name="deletemsg_542437379" value="yup" type="checkbox"> </label>
+<span class="msg">
+ <span class="msgfrom_113">
+  <i class="msgfrom" title="May 16, 2012 at 21:51&nbsp;UTC"><a href="http://perlmonks.org/?node_id=113">root</a> says</i>
+  You've got a reply to <a href="http://perlmonks.org/?node_id=970911">PerlMonks site design</a> from <a href="http://perlmonks.org/?node_id=170442">jdporter</a> at <a href="http://perlmonks.org/?node_id=970933">Re: PerlMonks site design</a><!-- -->
+ </span>
+</span><br>
+<label><input name="deletemsg_542437380" value="yup" type="checkbox"> </label>
+<span class="msg">
+ <span class="msgfrom_113">
+  <i class="msgfrom" title="May 16, 2012 at 21:52&nbsp;UTC"><a href="http://perlmonks.org/?node_id=113">root</a> says</i>
+  You've got a reply to <a href="http://perlmonks.org/?node_id=970911">PerlMonks site design</a> from <a href="http://perlmonks.org/?node_id=170442">jdporter</a> at <a href="http://perlmonks.org/?node_id=970934">Re: PerlMonks site design</a><!-- -->
+ </span>
+</span><br>
+<label><input name="deletemsg_542437402" value="yup" type="checkbox"> </label>
+<span class="msg">
+ <span class="msgfrom_113">
+  <i class="msgfrom" title="May 17, 2012 at 01:32&nbsp;UTC"><a href="http://perlmonks.org/?node_id=113">root</a> says</i>
+  You've got a reply to <a href="http://perlmonks.org/?node_id=970911">PerlMonks site design</a> from <a href="http://perlmonks.org/?node_id=22609">tye</a> at <a href="http://perlmonks.org/?node_id=970964">Re: PerlMonks site design (CSS)</a><!-- -->
+ </span>
+</span><br>
+<label><input name="deletemsg_542437422" value="yup" type="checkbox"> </label>
+<span class="msg">
+ <span class="msgfrom_113">
+  <i class="msgfrom" title="May 17, 2012 at 08:22&nbsp;UTC"><a href="http://perlmonks.org/?node_id=113">root</a> says</i>
+  You've got a reply to <a href="http://perlmonks.org/?node_id=970911">PerlMonks site design</a> from <a href="http://perlmonks.org/?node_id=747201">afoken</a> at <a href="http://perlmonks.org/?node_id=971002">Re: PerlMonks site design</a><!-- -->
+ </span>
+</span><br>
+<label><input name="deletemsg_542437425" value="yup" type="checkbox"> </label>
+<span class="msg">
+ <span class="msgfrom_113">
+  <i class="msgfrom" title="May 17, 2012 at 08:50&nbsp;UTC"><a href="http://perlmonks.org/?node_id=113">root</a> says</i>
+  You've got a reply to <a href="http://perlmonks.org/?node_id=970911">PerlMonks site design</a> from <a href="http://perlmonks.org/?node_id=324763">marto</a> at <a href="http://perlmonks.org/?node_id=971007">Re: PerlMonks site design</a><!-- -->
+ </span>
+</span><br>
+<label><input name="deletemsg_542437432" value="yup" type="checkbox"> </label>
+<span class="msg">
+ <span class="msgfrom_113">
+  <i class="msgfrom" title="May 17, 2012 at 09:42&nbsp;UTC"><a href="http://perlmonks.org/?node_id=113">root</a> says</i>
+  You've got a reply to <a href="http://perlmonks.org/?node_id=970911">PerlMonks site design</a> from <a href="http://perlmonks.org/?node_id=131741">zentara</a> at <a href="http://perlmonks.org/?node_id=971017">Re: PerlMonks site design</a><!-- -->
+ </span>
+</span><br>
+<label><input name="deletemsg_542437502" value="yup" type="checkbox"> </label>
+<span class="msg">
+ <span class="msgfrom_113">
+  <i class="msgfrom" title="May 17, 2012 at 16:24&nbsp;UTC"><a href="http://perlmonks.org/?node_id=113">root</a> says</i>
+  You've got a reply to <a href="http://perlmonks.org/?node_id=970962">Re^2: PerlMonks site design</a> from <a href="http://perlmonks.org/?node_id=170442">jdporter</a> at <a href="http://perlmonks.org/?node_id=971106">Re^3: PerlMonks site design</a><!-- -->
+ </span>
+</span><br>
+<label><input name="deletemsg_542437551" value="yup" type="checkbox"> </label>
+<span class="msg">
+ <span class="msgfrom_113">
+  <i class="msgfrom" title="May 17, 2012 at 20:34&nbsp;UTC"><a href="http://perlmonks.org/?node_id=113">root</a> says</i>
+  You've got a reply to <a href="http://perlmonks.org/?node_id=970911">PerlMonks site design</a> from <a href="http://perlmonks.org/?node_id=131494">Argel</a> at <a href="http://perlmonks.org/?node_id=971169">Re: PerlMonks site design</a><!-- -->
+ </span>
+</span><br>
+
+
+<span class="cb_more_messages"><i>&nbsp;&nbsp;• And </i><a href="http://perlmonks.org/?node=Message+Inbox;srch_folder=0"><b>1</b><i> more</i></a>, <a href="http://perlmonks.org/?node=Message+Inbox;srch_folder=1"><b>9</b><i> archived</i></a><br></span>
+
+<hr>
+<i class="cb_quiet">and all is quiet...</i><br>
+  <input name="op" value="message" type="hidden">
+  <!-- No private message sent -->
+  <input name="message" id="talkbox" size="15" maxlength="255" type="text">
+  <input name="message_send" value="talk" type="submit">
+
+</form>
+<i><br> <a href="http://perlmonks.org/?node=ChatterBox%20FAQ">How do I use this?</a>  |  <a href="http://perlmonks.org/?node_id=20842">Other CB clients</a></i>
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Other_Users">
+      <tr><th class="nodelet_head">
+          <span class="title">Other Users</span><a href="http://perlmonks.org/?node=About%20the%20Other%20Users" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<span class="other-users-text">Others <span class="other-users-blurb">taking refuge in</span> the Monastery:</span> (11)<br><ul class="spacey-list"><li><span class="even-row"><span class="item-000"><span class="user-level-19"><span class="user-534893"><a href="http://perlmonks.org/?node_id=534893" title="Gavin's home node. Level 19">Gavin</a></span></span></span></span></li>
+<li><span class="odd-row"><span class="item-001"><span class="user-level-18"><span class="user-70929"><a href="http://perlmonks.org/?node_id=70929" title="atcroft's home node. Level 18">atcroft</a></span></span></span></span></li>
+<li><span class="even-row"><span class="item-002"><span class="user-level-17"><span class="user-712372"><a href="http://perlmonks.org/?node_id=712372" title="kennethk's home node. Level 17">kennethk</a></span></span></span></span></li>
+<li><span class="odd-row"><span class="item-003"><span class="user-level-14"><span class="user-253915"><a href="http://perlmonks.org/?node_id=253915" title="Skeeve's home node. Level 14">Skeeve</a></span></span></span></span></li>
+<li><span class="even-row"><span class="item-004"><span class="user-level-10"><span class="user-161890"><a href="http://perlmonks.org/?node_id=161890" title="Lady_Aleena's home node. Level 10">Lady_Aleena</a></span></span></span></span></li>
+<li><span class="odd-row"><span class="item-005"><span class="user-level-9"><span class="user-789891"><a href="http://perlmonks.org/?node_id=789891" title="stevieb's home node. Level 9">stevieb</a></span></span></span></span></li>
+<li><span class="even-row"><span class="item-006"><span class="user-level-9"><span class="user-193499"><a href="http://perlmonks.org/?node_id=193499" title="kalle's home node. Level 9">kalle</a></span></span></span></span></li>
+<li><span class="odd-row"><span class="item-007"><span class="user-level-8"><span class="user-806480"><a href="http://perlmonks.org/?node_id=806480" title="Neighbour's home node. Level 8">Neighbour</a></span></span></span></span></li>
+<li><span class="even-row"><span class="item-008"><span class="user-level-7"><span class="user-596967"><a href="http://perlmonks.org/?node_id=596967" title="gnosti's home node. Level 7">gnosti</a></span></span></span></span></li>
+<li><span class="odd-row"><span class="item-009"><span class="user-level-4"><span class="user-656574"><a href="http://perlmonks.org/?node_id=656574" title="azadian's home node. Level 4">azadian</a></span></span></span></span></li>
+<li><span class="even-row"><span class="item-010"><span class="user-level-2"><span class="user-910459"><a href="http://perlmonks.org/?node_id=910459" title="kimmel's home node. Level 2">kimmel</a></span></span></span></span></li>
+</ul><span class="update-time"><small>As of 2012-05-20 19:51 GMT</small></span>
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Sections">
+      <tr><th class="nodelet_head">
+          <span class="title">Sections</span><a href="http://perlmonks.org/?node=About%20the%20Sections" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<ul class="spacey-list">
+<li><a href="http://perlmonks.org/?node=Seekers%20of%20Perl%20Wisdom">Seekers of Perl Wisdom</a></li>
+<li><a href="http://perlmonks.org/?node=Cool%20Uses%20for%20Perl">Cool Uses for Perl</a></li>
+<li><a href="http://perlmonks.org/?node=Meditations">Meditations</a></li>
+<li><a href="http://perlmonks.org/?node=Perl%20Monks%20Discussion">PerlMonks Discussion</a></li>
+<li><a href="http://perlmonks.org/?node=Categorized%20Questions%20and%20Answers">Categorized Q&amp;A</a></li>
+<li><a href="http://perlmonks.org/?node=Tutorials">Tutorials</a></li>
+<li><a href="http://perlmonks.org/?node=Obfuscated%20Code">Obfuscated Code</a></li>
+<li><a href="http://perlmonks.org/?node=Perl%20Poetry">Perl Poetry</a></li>
+<li><a href="http://perlmonks.org/?node=Perl%20News">Perl News</a></li>
+<li><a href="http://perlmonks.org/?node_id=483086">about</a></li>
+</ul>
+
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Information">
+      <tr><th class="nodelet_head">
+          <span class="title">Information</span><a href="http://perlmonks.org/?node=About%20the%20Information" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<ul class="spacey-list">
+<li><a href="http://perlmonks.org/?node=PerlMonks%20FAQ">PerlMonks FAQ</a></li>
+<li><a href="http://perlmonks.org/?node=the%20Perl%20Monks%20guide%20to%20the%20Monastery">Guide to the Monastery</a></li>
+<li><a href="http://perlmonks.org/?node=Tidings">What's New at PerlMonks</a><span class="wikiupdate">(*)</span></li>
+<li><a href="http://perlmonks.org/?node=Voting%2FExperience%20System">Voting/Experience System</a></li>
+<li><a href="http://perlmonks.org/?node=Tutorials">Tutorials</a></li>
+<li><a href="http://perlmonks.org/?node=Reviews">Reviews</a></li>
+<li><a href="http://perlmonks.org/?node=Library">Library</a></li>
+<li><a href="http://perlmonks.org/?node=perlman%3Aperlfaq">Perl FAQs</a></li>
+<li><a href="http://perlmonks.org/?node=Where%20can%20I%20find%20more%20information%20on...">Other Info Sources</a></li>
+</ul>
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Find_Nodes">
+      <tr><th class="nodelet_head">
+          <span class="title">Find Nodes</span><a href="http://perlmonks.org/?node=About%20the%20Find%20Nodes" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<ul class="spacey-list">
+<li><a href="http://perlmonks.org/?node_id=6364;user=910459">Nodes You Wrote</a></li>
+<li><a href="http://perlmonks.org/?node=Super%20Search">Super Search</a></li>
+<li><a href="http://perlmonks.org/?node=Perl%20Monks%20User%20Search">List Nodes By Users</a></li>
+<li><a href="http://perlmonks.org/?node=Newest%20Nodes">Newest Nodes</a></li>
+<li><a href="http://perlmonks.org/?node=Recently%20Active%20Threads">Recently Active Threads</a></li>
+<li><a href="http://perlmonks.org/?node=Selected%20Best%20Nodes">Selected Best Nodes</a></li>
+<li><a href="http://perlmonks.org/?node=Best%20Nodes">Best Nodes</a></li>
+<li><a href="http://perlmonks.org/?node=Worst%20Nodes">Worst Nodes</a></li>
+<li><a href="http://perlmonks.org/?node=Saints%20in%20our%20Book">Saints in our Book</a></li>
+</ul>
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Leftovers">
+      <tr><th class="nodelet_head">
+          <span class="title">Leftovers</span><a href="http://perlmonks.org/?node=About%20the%20Leftovers" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<ul class="spacey-list" id="user"><li><a href="http://perlmonks.org/?node_id=910459">kimmel</a></li>
+<li><a href="http://perlmonks.org/?node_id=109;op=logout">log&nbsp;out</a></li>
+</ul>
+<ul class="spacey-list" id="internal">
+<li><a href="http://perlmonks.org/?node=The%20St.%20Larry%20Wall%20Shrine">The St. Larry Wall Shrine</a></li>
+<li><a href="http://perlmonks.org/?node_id=781756">Buy PerlMonks Gear</a></li>
+<li><a href="http://perlmonks.org/?node=Offering%20Plate">Offering Plate</a></li>
+<li><a href="http://perlmonks.org/?node=Awards">Awards</a></li>
+<li><a href="http://perlmonks.org/?op=randomnode">Random Node</a></li>
+<li><a href="http://perlmonks.org/?node=Quests">Quests</a></li>
+<li><a href="http://perlmonks.org/?node=Craft">Craft</a></li>
+<li><a href="http://perlmonks.org/?node=Snippets%20Section">Snippets</a></li>
+<li><a href="http://perlmonks.org/?node=Code%20Catacombs">Code Catacombs</a></li>
+<li><a href="http://perlmonks.org/?node=Editor%20Requests">Editor Requests</a></li>
+</ul><ul class="spacey-list" id="external">
+<li><a href="http://blogs.perl.org/">blogs.perl.org</a></li>
+<!--<li>[http://planet.perl.org/|Planet Perl]</li>-->
+<li><a href="http://perlsphere.net/">Perlsphere</a></li>
+<li><a href="http://ironman.enlightenedperl.org/">Perl Ironman Blog</a></li>
+<li><a href="http://perlweekly.com/">Perl Weekly</a></li>
+<li><a href="http://perl.com/">Perl.com</a></li>
+<li><a href="http://www.perlfoundation.org/perl5/index.cgi">Perl 5 Wiki</a></li>
+<li><a href="http://jobs.perl.org/">Perl Jobs</a></li>
+<li><a href="http://www.pm.org/">Perl Mongers</a></li>
+<li><a href="http://www.perl.org/">Perl Directory</a></li>
+<li><a href="http://perldoc.perl.org/">Perl documentation</a></li>
+<li><a href="https://metacpan.org/">MetaCPAN</a></li>
+<li><a href="http://cpan.perl.org/">CPAN</a></li>
+</ul>
+
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Voting_Booth">
+      <tr><th class="nodelet_head">
+          <span class="title">Voting Booth</span><a href="http://perlmonks.org/?node=About%20the%20Voting%20Booth" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<h4>My favourite stuffed toy is a(n)…</h4><form method="post" action="?" enctype="multipart/form-data">
+<div style="display:none"><input name="displaytype" value="display" type="hidden"><input name="node_id" value="968223" type="hidden"></div>
+<p>
+<label><input name="vote" value="0" type="radio">Monkey or Ape
+</label><br> <label><input name="vote" value="1" type="radio">Horse or Donkey
+</label><br> <label><input name="vote" value="2" type="radio">Unicorn 
+</label><br> <label><input name="vote" value="3" type="radio">My Little Pony
+</label><br> <label><input name="vote" value="4" type="radio">Giraffe
+</label><br> <label><input name="vote" value="5" type="radio">Pig
+</label><br> <label><input name="vote" value="6" type="radio">Cow
+</label><br> <label><input name="vote" value="7" type="radio">Elephant
+</label><br> <label><input name="vote" value="8" type="radio">Camel, onion, ogre, oyster or other Perl mascot
+</label><br> <label><input name="vote" value="9" type="radio">Cat or other feline
+</label><br> <label><input name="vote" value="10" type="radio">Dog
+</label><br> <label><input name="vote" value="11" type="radio">Bear or Koala
+</label><br> <label><input name="vote" value="12" type="radio">Rabbit
+</label><br> <label><input name="vote" value="13" type="radio">Kangaroo
+</label><br> <label><input name="vote" value="14" type="radio">Duck
+</label><br> <label><input name="vote" value="15" type="radio">Other bird
+</label><br> <label><input name="vote" value="16" type="radio">Snake
+</label><br> <label><input name="vote" value="17" type="radio">Crocodile
+</label><br> <label><input name="vote" value="18" type="radio">Fish
+</label><br> <label><input name="vote" value="19" type="radio">Octopus
+</label><br> <label><input name="vote" value="20" type="radio">Worm
+</label><br> <label><input name="vote" value="21" type="radio">Plant
+</label><br> <label><input name="vote" value="22" type="radio">Microbe
+</label><br> <label><input name="vote" value="23" type="radio">Car
+</label><br> <label><input name="vote" value="24" type="radio">Human animal (I'm from the Planet of the Apes)
+</label><br> <label><input name="vote" value="25" type="radio">Other</label><br><input value="Vote" type="submit">
+</p>
+</form>
+
+<p>
+<a href="http://perlmonks.org/?node_id=968223">Results (586 votes)</a>, 
+<a href="http://perlmonks.org/?node=past%20polls">past polls</a></p>
+      </td></tr>
+
+    </tbody>
+
+
+</table>
+
+        <!-- End nodelets -->
+      </td>
+
+      <!--/nodelet handling code (monktainer)-->
+
+    </tr>
+  </tbody></table>
+</center>
+
+<!-- End main (monktainer)-->
+<br>
+<br>
+
+<div id="footer">
+          PerlMonks parthenogenetically spawned by <a href="http://perlmonks.org/?node=vroom">Tim Vroom</a>.<br>
+      PerlMonks went on a couple dates, and then decided to shack up with
+      <a href="http://www.perlfoundation.org/">The Perl Foundation</a>.<br>
+      Beefy Boxes and Bandwidth Generously Provided by
+      <a href="http://promote.pair.com/direct.pl?perlmonks.org">
+      pair Networks</a>
+
+</div>
+<!-- /monktainer -->
+
+  
+      
+</body></html>
