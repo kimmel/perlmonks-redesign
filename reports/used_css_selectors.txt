@@ -1,0 +1,52 @@
+"http://perlmonks.org/css/common.css","http://perlmonks.org/?node_id=204962"
+"49 used selectors:","20 used selectors:"
+,
+body,body
+h3.superdoc,td
+span.addlinks,tr.titlebar
+input.titlebar,tr.titlebar td
+tr.titlebar,tr.section_title
+a.titlebar:link,td.section_title
+a.titlebar:visited,tr.post_head
+tbody.nodelet td,td.titlebar
+tbody.nodelet th,table.nodelet_container
+tbody.nodelet th a,a:link
+form,a:visited
+span.title,a.titlebar:link
+.inline-list li,a.titlebar:visited
+.inline-list li:before,tbody.nodelet td
+ul.inline-list,tbody.nodelet th
+ul.spacey-list,tbody.nodelet th a:link
+pre,tbody.nodelet th a:visited
+.embed-code-dl,.highlight
+.embed-code-dl a,.comment-on
+div#footer,table#replies_table
+tr.titlebar,
+td.monkquip,
+a.nodelethead-annot,
+.pmsig,
+.add-text,
+.add-title,
+.pmsig > div:first-child > hr:first-child,
+p.nnt-p,
+p.nnt-p-title,
+p.nnt-author,
+a.nnt-Steaming,
+a.nnt-Hot,
+a.nnt-Fresh,
+.nnt-noderep,
+.nnt-nodeattribs,
+.time-text,
+#nodethreads,
+#nodethreads ul,
+#nodethreads li,
+#nodethreads ul.expanded,
+span.attribution,
+.attribution-title,
+.reply-body,
+.comment-on,
+.comment-on u,
+.comment-on,
+td.adjunct-links,
+div.link-back,
+div.readmore,

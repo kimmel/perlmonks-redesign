@@ -1,0 +1,38 @@
+"http://perlmonks.org/css/common.css","http://perlmonks.org/?node_id=204962"
+"35 unused selectors:","5 unused selectors:"
+,
+.reply-new-body,h2.titlebar
+h2.titlebar,tr.ntc-head
+span.controls,td.nodebody
+div.reputation,th.nodehead
+font.htmlignored,.chatsubmit
+div.showcontainer,
+div.containername,
+tr.this-patch td,
+tr.other-patch td,
+li.inline,
+li.inline:before,
+ul.word-list,
+.word-list li,
+.word-list li:before,
+#nodethreads ul.collapsed,
+.spoiler,
+.faqlist-itemtype,
+.faqlist-faqlist,
+.faqlist-faqseen,
+.faqlist-thislist,
+span.see_also,
+span.see_also a,
+.chatsubmit,
+.paneled,
+.mailhead,
+font.htmlattrib,
+font.htmlignored,
+font.htmlinserted,
+td.settings_key,
+td.settings_val,
+h2.titlebar,
+span.topnavmenu,
+span.inboxupdate,
+span.rjeupdate,
+span.wikiupdate,
