@@ -1,0 +1,53 @@
+"http://www.perlmonks.org/css/common.css","http://www.perlmonks.org/?node_id=204962","http://www.perlmonks.org/?node=print%20displaytype%20stylesheet","http://www.perlmonks.org/index.pl?node_id=204962"
+"50 used selectors:","22 used selectors:","5 used selectors:","22 used selectors:"
+,,,
+body,body,body,body
+h3.superdoc,td,#header,td
+span.addlinks,tr.titlebar,#url,tr.titlebar
+input.titlebar,tr.titlebar td,#header > div.title,tr.titlebar td
+tr.titlebar,tr.section_title,#header > div.subtitle,tr.section_title
+a.titlebar:link,td.section_title,,td.section_title
+a.titlebar:visited,tr.post_head,,tr.post_head
+tbody.nodelet td,td.titlebar,,.highlight
+tbody.nodelet th,table.nodelet_container,,td.titlebar
+tbody.nodelet th a,a:link,,table.nodelet_container
+form,a:visited,,a:link
+span.title,a.titlebar:link,,a:visited
+.inline-list li,a.titlebar:visited,,a.titlebar:link
+.inline-list li:before,tbody.nodelet td,,a.titlebar:visited
+ul.inline-list,tbody.nodelet th,,tbody.nodelet td
+ul.spacey-list,tbody.nodelet th a:link,,tbody.nodelet th
+pre,tbody.nodelet th a:visited,,tbody.nodelet th a:link
+.embed-code-dl,.highlight,,tbody.nodelet th a:visited
+.embed-code-dl a,.comment-on,,.comment-on
+div#footer,table#replies_table,,table#replies_table
+tr.titlebar,td.nodebody,,td.nodebody
+td.monkquip,th.nodehead,,th.nodehead
+a.nodelethead-annot,,,
+.pmsig,,,
+.add-text,,,
+.add-title,,,
+.pmsig > div:first-child > hr:first-child,,,
+p.nnt-p,,,
+p.nnt-p-title,,,
+p.nnt-author,,,
+a.nnt-Steaming,,,
+a.nnt-Hot,,,
+a.nnt-Fresh,,,
+.nnt-noderep,,,
+.nnt-nodeattribs,,,
+.time-text,,,
+#nodethreads,,,
+#nodethreads ul,,,
+#nodethreads li,,,
+#nodethreads ul.expanded,,,
+span.attribution,,,
+.attribution-title,,,
+#nodethreads ul.collapsed,,,
+.reply-body,,,
+.comment-on,,,
+.comment-on u,,,
+.comment-on,,,
+td.adjunct-links,,,
+div.link-back,,,
+div.readmore,,,
